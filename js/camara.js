@@ -6,6 +6,8 @@ const dialog = document.querySelector("dialog");
 const imgPreview = document.querySelector("#imgPreview");
 const btnPost = document.querySelector("#postImg");
 const inputTitulo = document.querySelector("#tituloImg");
+const imgCamaraDisable = "./images/camara-disable.png";
+const imgDisable = precargarImagen(imgCamaraDisable);
 
 const inputCamara = document.createElement("input");
 inputCamara.type = "file";
@@ -56,6 +58,14 @@ function crearPost() {
         })
 }
 
+const precargarImagen = (url) => {
+    const img = new Image();
+    img.src = url;
+    return img;
+};
+
+//Eventos
+
 btnNuevo.addEventListener("click", () => {
     if(navigator.onLine) {
         inputCamara.click();
@@ -77,7 +87,7 @@ imgPreview.addEventListener("click", () => inputCamara.click() )
 
 window.addEventListener("offline", () => {
     console.warn("Conexión perdida");
-    btnNuevo.src = "./images/camara-disable.png";
+    btnNuevo.src = imgDisable.src;
     btnPost.disabled = true;
     btnPost.classList = "montserrat-p buttonDisable"
 })
