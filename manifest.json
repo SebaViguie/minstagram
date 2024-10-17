@@ -1,0 +1,38 @@
+{
+    "short_name": "Minstagram",
+    "name": "Minstagram Red Social",
+    "version": "1.0.0",
+    "background_color": "#141a24",
+    "theme_color": "#141a24",
+    "description": "PWA para compartir imágenes",
+    "scope": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "./images/icon-64.png",
+            "type": "image/png",
+            "sizes": "64x64"
+        },
+        {
+            "src": "./images/icon-144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "./images/icon-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "./images/icon-256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "./images/icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
+
+.montserrat-p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+  }
+
+.logo {
+  font-family: "Londrina Sketch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #33B3AE;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px 0 0 0;
+}
+
+.imagenPost {
+    max-width: 100%;
+}
+
+.tituloPost {
+    font-size: 32px;
+    margin: 16px 0 8px 0;
+}
+
+.fechaPost {
+    font-size: 12px;
+}
+
+.menuInferior {
+    display: flex;
+    justify-content: center;
+    height: 48px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #181f2b;
+}
+
+body {
+    margin: 0 0 48px 0;
+    background-color: #141a24;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+dialog {
+    width: 300px;
+    border: none;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: #181f2b;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+    
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+dialog div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & img {
+        max-width: 80%;
+        margin-bottom: 16px;
+    }
+
+    & #tituloImg {
+        border: none;
+        background-color: #141a24;
+        border: 1px solid #33B3AE;
+        border-radius: 8px;
+        padding: 8px 16px;
+    } 
+
+    & #tituloImg:focus {
+        outline: none;
+    }
+
+    & div {
+        display: flex;
+        flex-direction: row;
+        margin: 16px;
+
+        & button {
+            margin: 8px;
+            background-color: #141a24;
+            border: 1px solid #33B3AE;
+            border-radius: 8px;
+            padding: 8px 16px;
+            min-width: 100px;
+        }
+    }
+}
+
+.buttonDisable {
+    border-color: gray;
+    color: rgb(0, 0, 0);
+    background-color: rgb(207, 207, 207);
+}
