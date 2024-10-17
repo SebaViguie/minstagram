@@ -2,6 +2,7 @@
     "short_name": "Minstagram",
     "name": "Minstagram Red Social",
     "version": "1.0.0",
+    "start_url": "/minstagram/index.html",
     "background_color": "#141a24",
     "theme_color": "#141a24",
     "description": "PWA para compartir imágenes",
