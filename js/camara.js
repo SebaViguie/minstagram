@@ -7,7 +7,7 @@ const imgPreview = document.querySelector("#imgPreview");
 const btnPost = document.querySelector("#postImg");
 const inputTitulo = document.querySelector("#tituloImg");
 const imgCamaraDisable = "./images/camara-disable.png";
-
+const imgDisable = precargarImagen(imgCamaraDisable);
 
 const inputCamara = document.createElement("input");
 inputCamara.type = "file";
@@ -58,12 +58,12 @@ function crearPost() {
         })
 }
 
-const precargarImagen = (url) => {
+function precargarImagen(url) {
     const img = new Image();
     img.src = url;
     return img;
-};
-const imgDisable = precargarImagen(imgCamaraDisable);
+}
+
 
 //Eventos
 
